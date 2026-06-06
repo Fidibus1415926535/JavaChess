@@ -1,2 +1,2 @@
-package chess.calculation.pieces;
+package calculation.pieces;
 public record Move(int x, int y) {}

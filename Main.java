@@ -1,6 +1,5 @@
-package chess;
-import chess.board.*;
-import chess.pieces.*;
+import calculation.board.*;
+import calculation.pieces.*;
 
 public class Main{
     public static void main(String[] args){

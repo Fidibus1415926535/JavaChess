@@ -1,11 +1,12 @@
-package chess.calculation.pieces;
+package calculation.pieces;
+import calculations.board.Board;
 public interface Piece{
-    public record Move(int x, int y) {}
     Type type;
     int xCoord;
     int yCoord;
-    boolean white;
-    public Move[] getMoves();
+    boolean white; //Piece can have white and black because EMPTY pieces have neither 
+    boolean black;
+    public Move[] getMoves(Board board);
     
 
 }
