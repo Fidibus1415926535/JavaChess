@@ -1,13 +1,13 @@
-package calculation.pieces;
-import calculations.board.Board;
-public class Empty implements Piece{
-    Type type = EMPTY;
+package javachess.calculation.pieces;
+import javachess.calculation.board.Board;
+public class Bishop extends PieceClass{
+    Type type = BISHOP;
     int xCoord;
     int yCoord;
     boolean white;
     boolean black;
 
-    public Empty(boolean white, boolean black, int x, int y){
+    public Bishop(boolean white, boolean black, int x, int y){
         this.white = white;
         this.black = black; 
         this.xCoord = x;

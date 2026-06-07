@@ -1,13 +1,13 @@
-package calculation.pieces;
-import calculations.board.Board;
-public class Queen implements Piece{
-    Type type = QUEEN;
+package javachess.calculation.pieces;
+import javachess.calculation.board.Board;
+public class Rock extends PieceClass{
+    Type type = ROCK;
     int xCoord;
     int yCoord;
     boolean white;
     boolean black;
 
-    public Queen(boolean white, boolean black, int x, int y){
+    public Rock(boolean white, boolean black, int x, int y){
         this.white = white;
         this.black = black; 
         this.xCoord = x;

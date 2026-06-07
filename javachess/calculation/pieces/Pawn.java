@@ -1,13 +1,13 @@
-package calculation.pieces;
-import calculations.board.Board;
-public class King implements Piece{
-    Type type = KING;
+package javachess.calculation.pieces;
+import javachess.calculation.board.Board;
+public class Pawn extends PieceClass{
+    Type type = PAWN;
     int xCoord;
     int yCoord;
     boolean white;
     boolean black;
 
-    public King(boolean white, boolean black, int x, int y){
+    public Pawn(boolean white, boolean black, int x, int y){
         this.white = white;
         this.black = black; 
         this.xCoord = x;
@@ -15,6 +15,6 @@ public class King implements Piece{
     }
 
     public Move[] getMoves(Board board){
-        
+
     }
 }

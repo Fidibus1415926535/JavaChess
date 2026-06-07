@@ -1,7 +1,7 @@
-package calculation.board;
-import calculation.pieces.*;
+package javachess.calculation.board;
+import javachess.calculation.pieces.*;
 public class Board{
-    Piece [][] board;
+    PieceClass [][] board;
     boolean playerWhite;  // Is the player white?  
     boolean playerBlack; 
     boolean whiteTurn; // Is white the player that has to move? 
@@ -13,7 +13,7 @@ public class Board{
     }
 
     public void setUp(){
-        this.board = new Piece[8][8]();
+        this.board = new PieceClass[8][8];
         for (int i = 0; i < 8; i++){ //x Coordinate
             for (int j = 2; j < 7; j++){ //y Coordinate
                 this.board[i][j] = new Empty(false, false, i, j);
@@ -47,17 +47,17 @@ public class Board{
 
 
     //todo (for each piece do piece.getMoves() and save the result)
-    public Move[] getAllMoves(){}
+    //public Move[] getAllMoves(){}
 
     //todo (for each Move in the list verify the move using positionLegal())
-    public Move verifyMoves(Move[] unverifiedMoves){}
+    //public Move verifyMoves(Move[] unverifiedMoves){}
 
     //todo (check if a move results in a legal position, uses check())
-    public boolean positionLegal(){}
+    //public boolean positionLegal(){}
 
     //todo (check for check on board)
-    public boolean check(){}
+    //public boolean check(){}
 
     //todo (check for checkmate on board)
-    public boolean checkMate(){}
+    //public boolean checkMate(){}
 }

@@ -1,4 +1,4 @@
-package calculation.pieces;
+package javachess.calculation.pieces;
 public enum Type{
     PAWN, 
     KNIGHT,
